@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fcf7fc" />
+
+    <title>לומדות להצליח | שיעורים פרטיים במדעי המחשב</title>
+    <meta
+      name="description"
+      content="שיעורים פרטיים במדעי המחשב לתלמידות תיכון בגבעת שמואל והסביבה."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("site-theme");
+        if (savedTheme === "dark" || savedTheme === "light") {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch {}
+    </script>
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a class="logo" href="#home" aria-label="לומדות להצליח - ראש העמוד">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span>לומדות להצליח</span>
+      </a>
+
+      <nav class="nav-links" aria-label="ניווט ראשי">
+        <a href="#about">קצת עליי</a>
+        <a href="#lessons">השיעורים</a>
+        <a class="nav-cta" href="#contact">יצירת קשר</a>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="הפעילי מצב לילה"
+        aria-pressed="false"
+      >
+        <span id="theme-icon" aria-hidden="true">☾</span>
+        <span id="theme-label">מצב לילה</span>
+      </button>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <span class="eyebrow">שיעורים פרטיים במדעי המחשב</span>
+
+          <h1>
+            להבין תכנות<br />
+            <span class="highlight">בדרך שלך.</span>
+          </h1>
+
+          <p class="hero-description">
+            שיעורים פרטיים במדעי המחשב, עם הסברים ברורים ותרגול שמתאים בדיוק למה
+            שאת צריכה.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">
+              בואי נדבר
+              <span aria-hidden="true">←</span>
+            </a>
+            <a class="text-link" href="#about">קצת עליי</a>
+          </div>
+
+          <p class="hero-note">לתלמידות תיכון · גבעת שמואל והסביבה</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orbit"></div>
+
+          <div class="code-card">
+            <div class="code-topbar">
+              <div class="window-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span>learning.js</span>
+            </div>
+
+            <div class="code-content" dir="ltr">
+              <p>
+                <span class="code-muted">01</span>
+                <span class="code-purple">function</span> learn() {
+              </p>
+              <p>
+                <span class="code-muted">02</span> &nbsp;
+                <span class="code-pink">let</span> question =
+                <span class="code-green">"why?"</span>;
+              </p>
+              <p><span class="code-muted">03</span></p>
+              <p>
+                <span class="code-muted">04</span> &nbsp; understand(question);
+              </p>
+              <p><span class="code-muted">05</span> &nbsp; practice();</p>
+              <p><span class="code-muted">06</span></p>
+              <p>
+                <span class="code-muted">07</span> &nbsp;
+                <span class="code-purple">return</span> confidence;
+              </p>
+              <p><span class="code-muted">08</span> }</p>
+            </div>
+
+            <div class="code-bottom">
+              <span class="code-check">✓</span>
+              <span>הבנה מתחילה בשאלה טובה</span>
+            </div>
+          </div>
+
+          <div class="floating-note note-top">
+            <span class="note-icon">✳</span>
+            <span>לומדות בקצב שלך</span>
+          </div>
+
+          <div class="floating-note note-bottom">
+            <span class="note-icon">♡</span>
+            <span>שאלה אחת בכל פעם</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lessons -->
+      <section class="lessons-section section-wrap" id="lessons">
+        <div class="section-heading">
+          <span class="eyebrow">איך לומדות?</span>
+          <h2>פשוט, ברור, ביחד.</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon icon-lilac" aria-hidden="true">01</div>
+            <h3>מבינות את החומר</h3>
+            <p>מסבירות את הרעיונות בצורה ברורה, עם דוגמאות.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon icon-pink" aria-hidden="true">02</div>
+            <h3>מתרגלות יחד</h3>
+            <p>פותרים תרגילים ולומדים איך לגשת לשאלות חדשות.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon icon-peach" aria-hidden="true">03</div>
+            <h3>מתקדמות בקצב שלך</h3>
+            <p>מתמקדות בנושאים שאת צריכה לחזק.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- About -->
+
+      <section class="about-section" id="about">
+        <div class="about-layout">
+          <div class="about-content">
+            <span class="eyebrow">קצת עליי</span>
+            <h2>נעים להכיר, אני שירה <span class="highlight">♡</span></h2>
+
+            <p>
+              הדרך שלי למדעי המחשב התחילה עוד בתיכון, כשבחרתי במגמת מדעי המחשב
+              והתאהבתי בעולם התכנות. סיימתי את הבגרות בציון 100, והבנתי שזה תחום
+              שאני רוצה להמשיך להתפתח בו.
+            </p>
+
+            <p>
+              משם המשכתי לשירות בתפקיד טכנולוגי, שבו צברתי ניסיון נוסף בעולם
+              הטכנולוגיה, ובהמשך התחלתי תואר במדעי המחשב באוניברסיטת בר־אילן,
+              שבו אני לומדת כיום בשנה ג׳.
+            </p>
+
+            <p>
+              לצד הלימודים, אני מעבירה שיעורים פרטיים במדעי המחשב. חשוב לי להפוך
+              נושאים שנראים מסובכים לברורים יותר, ולעזור לכל תלמידה למצוא את
+              הדרך שלה להבין ולפתור תרגילים.
+            </p>
+
+            <div class="about-location">
+              <span aria-hidden="true">⌖</span>
+              גבעת שמואל והסביבה
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact-section section-wrap" id="contact">
+        <div class="section-heading">
+          <span class="eyebrow">יצירת קשר</span>
+          <h2>עני על כמה שאלות קצרות ואחזור אלייך</h2>
+        </div>
+
+        <div class="contact-layout">
+          <form
+            class="form-card"
+            id="contact-form"
+            action="https://formspree.io/f/mbggjbpl"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="פנייה חדשה לגבי שיעורים פרטיים במדעי המחשב"
+            />
+            <input type="hidden" name="מטרת השיעורים" id="selected-goal" />
+            <input type="hidden" name="כיתה" id="selected-grade" />
+            <input type="hidden" name="נושאים לתרגול" id="selected-topics" />
+
+            <div class="form-intro">
+              <h3>קצת פרטים</h3>
+              <p>כדי שאוכל להבין מה מתאים לך.</p>
+            </div>
+
+            <fieldset class="question-group">
+              <legend>1. מה המטרה שלך?</legend>
+
+              <div class="choice-grid">
+                <label class="choice">
+                  <input
+                    type="radio"
+                    name="goal-choice"
+                    value="להבין את החומר טוב יותר"
+                    required
+                  />
+                  <span class="choice-content">להבין את החומר טוב יותר</span>
+                </label>
+
+                <label class="choice">
+                  <input
+                    type="radio"
+                    name="goal-choice"
+                    value="להתכונן למבחן"
+                  />
+                  <span class="choice-content">להתכונן למבחן</span>
+                </label>
+
+                <label class="choice">
+                  <input
+                    type="radio"
+                    name="goal-choice"
+                    value="לקבל עזרה בתרגילים"
+                  />
+                  <span class="choice-content">לקבל עזרה בתרגילים</span>
+                </label>
+
+                <label class="choice">
+                  <input
+                    type="radio"
+                    name="goal-choice"
+                    value="לבנות בסיס חזק בתכנות"
+                  />
+                  <span class="choice-content">לבנות בסיס חזק בתכנות</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="question-group">
+              <legend>2. באיזו כיתה את?</legend>
+
+              <div class="choice-grid grade-grid">
+                <label class="choice">
+                  <input type="radio" name="grade-choice" value="י׳" required />
+                  <span class="choice-content compact-choice">י׳</span>
+                </label>
+
+                <label class="choice">
+                  <input type="radio" name="grade-choice" value="י״א" />
+                  <span class="choice-content compact-choice">י״א</span>
+                </label>
+
+                <label class="choice">
+                  <input type="radio" name="grade-choice" value="י״ב" />
+                  <span class="choice-content compact-choice">י״ב</span>
+                </label>
+
+                <label class="choice">
+                  <input type="radio" name="grade-choice" value="אחר" />
+                  <span class="choice-content compact-choice">אחר</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="question-group">
+              <legend>3. על מה תרצי לעבוד?</legend>
+              <p class="question-hint">אפשר לבחור כמה נושאים.</p>
+
+              <div class="choice-grid">
+                <label class="choice">
+                  <input
+                    type="checkbox"
+                    name="topic-choice"
+                    value="הבנת החומר הנלמד לעומק"
+                  />
+                  <span class="choice-content">הבנת החומר הנלמד לעומק</span>
+                </label>
+
+                <label class="choice">
+                  <input
+                    type="checkbox"
+                    name="topic-choice"
+                    value="פתרון תרגילים ואלגוריתמים"
+                  />
+                  <span class="choice-content">תרגילים ואלגוריתמים</span>
+                </label>
+
+                <label class="choice">
+                  <input
+                    type="checkbox"
+                    name="topic-choice"
+                    value="הכנה למבחנים"
+                  />
+                  <span class="choice-content">הכנה למבחנים</span>
+                </label>
+
+                <label class="choice">
+                  <input
+                    type="checkbox"
+                    name="topic-choice"
+                    value="הכנה לבגרות"
+                  />
+                  <span class="choice-content">הכנה לבגרות</span>
+                </label>
+
+                <label class="choice">
+                  <input
+                    type="checkbox"
+                    name="topic-choice"
+                    value="עזרה בעבודות ובשיעורי בית"
+                  />
+                  <span class="choice-content">עבודות ושיעורי בית</span>
+                </label>
+
+                <label class="choice">
+                  <input type="checkbox" name="topic-choice" value="אחר" />
+                  <span class="choice-content">משהו אחר</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-divider"></div>
+
+            <div class="form-intro">
+              <h3>איך חוזרים אלייך?</h3>
+            </div>
+
+            <div class="field">
+              <label for="name">שם</label>
+              <input
+                type="text"
+                id="name"
+                name="שם"
+                placeholder="איך קוראים לך?"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="phone">מספר טלפון</label>
+              <input
+                type="tel"
+                id="phone"
+                name="טלפון"
+                placeholder="050-1234567"
+                autocomplete="tel"
+                inputmode="tel"
+                pattern="[0-9+\-\s()]{9,}"
+                title="נא להזין מספר טלפון תקין"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="message"> משהו נוסף? <span>(לא חובה)</span> </label>
+              <textarea
+                id="message"
+                name="הודעה נוספת"
+                rows="3"
+                placeholder="אפשר לכתוב כאן..."
+              ></textarea>
+            </div>
+
+            <button class="button button-primary submit-button" type="submit">
+              שליחת פרטים
+              <span aria-hidden="true">←</span>
+            </button>
+
+            <p class="privacy-note">
+              הפרטים ישמשו רק כדי לחזור אלייך בנוגע לשיעורים.
+            </p>
+
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+
+          <aside class="contact-aside">
+            <h3>לא בטוחה מאיפה להתחיל?</h3>
+            <p>
+              זה בסדר. כתבי לי מה את לומדת ומה קשה לך כרגע, ונראה יחד איך אפשר
+              לעזור.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="logo footer-logo" href="#home">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span>לומדות להצליח</span>
+      </a>
+      <p>שיעורים פרטיים במדעי המחשב · גבעת שמואל והסביבה</p>
+    </footer>
+  </body>
+</html>
