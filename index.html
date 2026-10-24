@@ -58,7 +58,6 @@
     </header>
 
     <main>
-      <!-- Hero -->
       <section class="hero" id="home">
         <div class="hero-content">
           <span class="eyebrow">שיעורים פרטיים במדעי המחשב</span>
@@ -70,7 +69,8 @@
 
           <p class="hero-description">
             שיעורים פרטיים במדעי המחשב, עם הסברים ברורים ותרגול שמתאים בדיוק למה
-            שאת צריכה.
+            שאת צריכה. <br /><br />השיעורים מתקיימים בגבעת שמואל והסביבה או
+            בזום, לבחירתך.
           </p>
 
           <div class="hero-actions">
@@ -80,8 +80,6 @@
             </a>
             <a class="text-link" href="#about">קצת עליי</a>
           </div>
-
-          <p class="hero-note">לתלמידות תיכון · גבעת שמואל והסביבה</p>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
@@ -119,11 +117,6 @@
               </p>
               <p><span class="code-muted">08</span> }</p>
             </div>
-
-            <div class="code-bottom">
-              <span class="code-check">✓</span>
-              <span>הבנה מתחילה בשאלה טובה</span>
-            </div>
           </div>
 
           <div class="floating-note note-top">
@@ -133,12 +126,11 @@
 
           <div class="floating-note note-bottom">
             <span class="note-icon">♡</span>
-            <span>שאלה אחת בכל פעם</span>
+            <span>עד ה100 בבגרות</span>
           </div>
         </div>
       </section>
 
-      <!-- Lessons -->
       <section class="lessons-section section-wrap" id="lessons">
         <div class="section-heading">
           <span class="eyebrow">איך לומדות?</span>
@@ -166,8 +158,6 @@
         </div>
       </section>
 
-      <!-- About -->
-
       <section class="about-section" id="about">
         <div class="about-layout">
           <div class="about-content">
@@ -191,16 +181,10 @@
               נושאים שנראים מסובכים לברורים יותר, ולעזור לכל תלמידה למצוא את
               הדרך שלה להבין ולפתור תרגילים.
             </p>
-
-            <div class="about-location">
-              <span aria-hidden="true">⌖</span>
-              גבעת שמואל והסביבה
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- Contact -->
       <section class="contact-section section-wrap" id="contact">
         <div class="section-heading">
           <span class="eyebrow">יצירת קשר</span>
@@ -229,50 +213,7 @@
             </div>
 
             <fieldset class="question-group">
-              <legend>1. מה המטרה שלך?</legend>
-
-              <div class="choice-grid">
-                <label class="choice">
-                  <input
-                    type="radio"
-                    name="goal-choice"
-                    value="להבין את החומר טוב יותר"
-                    required
-                  />
-                  <span class="choice-content">להבין את החומר טוב יותר</span>
-                </label>
-
-                <label class="choice">
-                  <input
-                    type="radio"
-                    name="goal-choice"
-                    value="להתכונן למבחן"
-                  />
-                  <span class="choice-content">להתכונן למבחן</span>
-                </label>
-
-                <label class="choice">
-                  <input
-                    type="radio"
-                    name="goal-choice"
-                    value="לקבל עזרה בתרגילים"
-                  />
-                  <span class="choice-content">לקבל עזרה בתרגילים</span>
-                </label>
-
-                <label class="choice">
-                  <input
-                    type="radio"
-                    name="goal-choice"
-                    value="לבנות בסיס חזק בתכנות"
-                  />
-                  <span class="choice-content">לבנות בסיס חזק בתכנות</span>
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset class="question-group">
-              <legend>2. באיזו כיתה את?</legend>
+              <legend>1. באיזו כיתה את?</legend>
 
               <div class="choice-grid grade-grid">
                 <label class="choice">
@@ -298,7 +239,7 @@
             </fieldset>
 
             <fieldset class="question-group">
-              <legend>3. על מה תרצי לעבוד?</legend>
+              <legend>2. על מה תרצי לעבוד?</legend>
               <p class="question-hint">אפשר לבחור כמה נושאים.</p>
 
               <div class="choice-grid">
@@ -315,27 +256,9 @@
                   <input
                     type="checkbox"
                     name="topic-choice"
-                    value="פתרון תרגילים ואלגוריתמים"
-                  />
-                  <span class="choice-content">תרגילים ואלגוריתמים</span>
-                </label>
-
-                <label class="choice">
-                  <input
-                    type="checkbox"
-                    name="topic-choice"
                     value="הכנה למבחנים"
                   />
-                  <span class="choice-content">הכנה למבחנים</span>
-                </label>
-
-                <label class="choice">
-                  <input
-                    type="checkbox"
-                    name="topic-choice"
-                    value="הכנה לבגרות"
-                  />
-                  <span class="choice-content">הכנה לבגרות</span>
+                  <span class="choice-content">הכנה למבחנים / הכנה לבגרות</span>
                 </label>
 
                 <label class="choice">
@@ -381,14 +304,18 @@
                 placeholder="050-1234567"
                 autocomplete="tel"
                 inputmode="tel"
-                pattern="[0-9+\-\s()]{9,}"
-                title="נא להזין מספר טלפון תקין"
+                aria-describedby="phone-error"
                 required
               />
+              <small
+                class="field-error"
+                id="phone-error"
+                aria-live="polite"
+              ></small>
             </div>
 
             <div class="field">
-              <label for="message"> משהו נוסף? <span>(לא חובה)</span> </label>
+              <label for="message">משהו נוסף? <span>(לא חובה)</span></label>
               <textarea
                 id="message"
                 name="הודעה נוספת"
@@ -413,14 +340,6 @@
               aria-live="polite"
             ></p>
           </form>
-
-          <aside class="contact-aside">
-            <h3>לא בטוחה מאיפה להתחיל?</h3>
-            <p>
-              זה בסדר. כתבי לי מה את לומדת ומה קשה לך כרגע, ונראה יחד איך אפשר
-              לעזור.
-            </p>
-          </aside>
         </div>
       </section>
     </main>
@@ -430,7 +349,7 @@
         <span class="logo-mark">&lt;/&gt;</span>
         <span>לומדות להצליח</span>
       </a>
-      <p>שיעורים פרטיים במדעי המחשב · גבעת שמואל והסביבה</p>
+      <p>שיעורים פרטיים במדעי המחשב</p>
     </footer>
   </body>
 </html>

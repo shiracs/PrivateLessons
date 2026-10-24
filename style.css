@@ -1,7 +1,5 @@
-
 :root {
   color-scheme: light;
-
   --purple: #8054ad;
   --purple-dark: #68418f;
   --purple-light: #f1e8fa;
@@ -15,12 +13,10 @@
   --card-background: #ffffff;
   --input-background: #ffffff;
   --shadow: 0 10px 32px rgba(73, 43, 93, 0.09);
-  --radius: 17px;
 }
 
 html[data-theme="dark"] {
   color-scheme: dark;
-
   --purple: #c5a1ed;
   --purple-dark: #dbc1f8;
   --purple-light: #352743;
@@ -51,7 +47,9 @@ body {
   color: var(--ink);
   font-family: "Heebo", Arial, sans-serif;
   line-height: 1.7;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 a {
@@ -84,8 +82,6 @@ textarea:focus-visible {
   background: var(--purple-light);
   color: var(--ink);
 }
-
-/* Navigation */
 
 .navbar {
   min-height: 76px;
@@ -162,7 +158,9 @@ textarea:focus-visible {
   color: var(--ink);
   font-size: 12px;
   cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .theme-toggle:hover {
@@ -173,8 +171,6 @@ textarea:focus-visible {
   font-size: 17px;
   line-height: 1;
 }
-
-/* Shared elements */
 
 .section-wrap {
   width: min(1040px, 90%);
@@ -205,7 +201,9 @@ textarea:focus-visible {
   cursor: pointer;
   font-weight: 600;
   text-align: center;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .button:hover {
@@ -266,8 +264,16 @@ html[data-theme="dark"] .section-heading h2 {
   gap: 55px;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 90% 15%, rgba(229, 195, 242, 0.27), transparent 35%),
-    radial-gradient(ellipse at 5% 100%, rgba(250, 214, 232, 0.24), transparent 33%),
+    radial-gradient(
+      ellipse at 90% 15%,
+      rgba(229, 195, 242, 0.27),
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 5% 100%,
+      rgba(250, 214, 232, 0.24),
+      transparent 33%
+    ),
     var(--soft-background);
 }
 
@@ -293,8 +299,15 @@ html[data-theme="dark"] .section-heading h2 {
   line-height: 1.9;
 }
 
+.hero-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
 .hero-actions {
-  margin-top: 26px;
+  margin-top: 18px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -312,12 +325,6 @@ html[data-theme="dark"] .section-heading h2 {
   text-underline-offset: 4px;
 }
 
-.hero-note {
-  margin: 20px 0 0;
-  color: var(--muted);
-  font-size: 12px;
-}
-
 .hero-visual {
   min-width: 0;
   position: relative;
@@ -329,8 +336,8 @@ html[data-theme="dark"] .section-heading h2 {
 
 .hero-orbit {
   position: absolute;
-  width: 330px;
-  height: 330px;
+  width: 290px;
+  height: 290px;
   border: 1px solid rgba(174, 131, 205, 0.22);
   border-radius: 50%;
 }
@@ -355,7 +362,7 @@ html[data-theme="dark"] .section-heading h2 {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 405px;
+  max-width: 340px;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 17px;
@@ -365,8 +372,8 @@ html[data-theme="dark"] .section-heading h2 {
 }
 
 .code-topbar {
-  min-height: 47px;
-  padding: 0 16px;
+  min-height: 42px;
+  padding: 0 13px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -374,7 +381,7 @@ html[data-theme="dark"] .section-heading h2 {
   border-bottom: 1px solid var(--border);
   color: var(--muted);
   font-family: monospace;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .window-dots {
@@ -398,11 +405,11 @@ html[data-theme="dark"] .section-heading h2 {
 }
 
 .code-content {
-  padding: 23px 17px 19px;
+  padding: 17px 13px 15px;
   overflow-x: auto;
   font-family: "Courier New", monospace;
-  font-size: clamp(10px, 1.1vw, 13px);
-  line-height: 1.9;
+  font-size: clamp(9px, 1vw, 12px);
+  line-height: 1.8;
   white-space: nowrap;
 }
 
@@ -411,7 +418,7 @@ html[data-theme="dark"] .section-heading h2 {
 }
 
 .code-muted {
-  margin-right: 12px;
+  margin-right: 9px;
   color: #b6a7c2;
 }
 
@@ -440,20 +447,20 @@ html[data-theme="dark"] .code-green {
 }
 
 .code-bottom {
-  padding: 12px 16px;
+  padding: 10px 12px;
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   border-top: 1px solid var(--border);
   background: var(--card-background);
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11px;
   direction: rtl;
 }
 
 .code-check {
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -465,16 +472,16 @@ html[data-theme="dark"] .code-green {
 .floating-note {
   position: absolute;
   z-index: 2;
-  padding: 10px 13px;
+  padding: 9px 11px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--card-background);
   box-shadow: var(--shadow);
   color: var(--ink);
-  font-size: 11px;
+  font-size: 10px;
   white-space: nowrap;
 }
 
@@ -490,7 +497,7 @@ html[data-theme="dark"] .code-green {
 
 .note-icon {
   color: var(--pink);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Lessons */
@@ -511,7 +518,9 @@ html[data-theme="dark"] .code-green {
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--card-background);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .benefit-card:hover {
@@ -567,15 +576,19 @@ html[data-theme="dark"] .icon-peach {
 .about-section {
   padding: 72px 5%;
   background:
-    radial-gradient(ellipse at 10% 10%, rgba(235, 210, 247, 0.23), transparent 40%),
+    radial-gradient(
+      ellipse at 10% 10%,
+      rgba(235, 210, 247, 0.23),
+      transparent 40%
+    ),
     var(--pink-light);
 }
 
 .about-layout {
-  width: min(1040px, 100%);
+  width: min(800px, 100%);
   margin-inline: auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(270px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: 42px;
 }
@@ -587,6 +600,7 @@ html[data-theme="dark"] .icon-peach {
 }
 
 .about-content > p {
+  max-width: 760px;
   margin: 0 0 13px;
   color: var(--muted);
   font-size: 14px;
@@ -660,7 +674,9 @@ html[data-theme="dark"] .icon-peach {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(230px, 0.75fr);
+  grid-template-columns: minmax(0, 1fr);
+  width: min(720px, 100%);
+  margin-inline: auto;
   align-items: start;
   gap: 22px;
 }
@@ -741,7 +757,9 @@ html[data-theme="dark"] .icon-peach {
   color: var(--ink);
   font-size: 12px;
   line-height: 1.6;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .choice:hover .choice-content {
@@ -803,7 +821,9 @@ html[data-theme="dark"] .icon-peach {
   background: var(--input-background);
   color: var(--ink);
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .field textarea {
@@ -822,6 +842,20 @@ html[data-theme="dark"] .icon-peach {
 .field textarea:focus {
   border-color: var(--purple);
   box-shadow: 0 0 0 3px rgba(128, 84, 173, 0.1);
+}
+
+.field-error {
+  color: #b83250;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+html[data-theme="dark"] .field-error {
+  color: #ffadc1;
+}
+
+.field input[aria-invalid="true"] {
+  border-color: #c0395b;
 }
 
 .submit-button {
@@ -943,7 +977,7 @@ html[data-theme="dark"] .form-status.error {
   font-size: 12px;
 }
 
-/* Responsive */
+/* Tablet */
 
 @media (max-width: 900px) {
   .navbar {
@@ -972,6 +1006,8 @@ html[data-theme="dark"] .form-status.error {
     gap: 26px;
   }
 }
+
+/* Mobile */
 
 @media (max-width: 680px) {
   html {
@@ -1017,48 +1053,100 @@ html[data-theme="dark"] .form-status.error {
 
   .hero {
     grid-template-columns: 1fr;
-    padding: 45px 6% 42px;
-    gap: 28px;
+    padding: 38px 6% 32px;
+    gap: 14px;
   }
 
   .hero h1 {
-    font-size: 39px;
+    font-size: 36px;
   }
 
   .hero-description {
     font-size: 14px;
   }
 
-  .hero-visual {
-    padding: 18px 14px;
-  }
-
-  .hero-orbit {
-    width: 280px;
-    height: 280px;
-  }
-
-  .code-card {
-    max-width: 420px;
-  }
-
-  .code-content {
+  .hero-note {
+    margin-top: 12px;
     font-size: 11px;
   }
 
+  .hero-actions {
+    margin-top: 14px;
+    gap: 15px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 245px;
+    justify-self: center;
+    padding: 5px 10px;
+  }
+
+  .hero-orbit {
+    width: 195px;
+    height: 195px;
+  }
+
+  .code-card {
+    max-width: 225px;
+    border-radius: 12px;
+  }
+
+  .code-topbar {
+    min-height: 30px;
+    padding: 0 9px;
+    font-size: 9px;
+  }
+
+  .window-dots {
+    gap: 4px;
+  }
+
+  .window-dots span {
+    width: 6px;
+    height: 6px;
+  }
+
+  .code-content {
+    padding: 9px 8px;
+    font-size: 8px;
+    line-height: 1.65;
+  }
+
+  .code-muted {
+    margin-right: 5px;
+  }
+
+  .code-bottom {
+    padding: 7px 9px;
+    gap: 6px;
+    font-size: 9px;
+  }
+
+  .code-check {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .floating-note {
+    padding: 5px 7px;
+    font-size: 8px;
+  }
+
   .note-top {
-    top: 0;
-    right: 0;
+    top: -2px;
+    right: -2px;
   }
 
   .note-bottom {
-    bottom: 0;
-    left: 0;
+    bottom: -2px;
+    left: -2px;
   }
 
   .lessons-section {
-    padding-top: 53px;
-    padding-bottom: 57px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 
   .section-heading {
@@ -1083,7 +1171,7 @@ html[data-theme="dark"] .form-status.error {
   }
 
   .about-section {
-    padding: 49px 5%;
+    padding: 45px 5%;
   }
 
   .about-layout {
@@ -1108,8 +1196,8 @@ html[data-theme="dark"] .form-status.error {
   }
 
   .contact-section {
-    padding-top: 55px;
-    padding-bottom: 58px;
+    padding-top: 50px;
+    padding-bottom: 55px;
   }
 
   .contact-layout {
@@ -1146,22 +1234,61 @@ html[data-theme="dark"] .form-status.error {
   }
 }
 
+/* Small phones */
+
 @media (max-width: 380px) {
   .nav-links {
     gap: 13px;
   }
 
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 25px;
+    gap: 10px;
+  }
+
   .hero h1 {
-    font-size: 34px;
+    font-size: 33px;
   }
 
   .hero-actions {
     gap: 13px;
   }
 
+  .hero-visual {
+    max-width: 205px;
+    padding: 2px 5px;
+  }
+
+  .hero-orbit {
+    width: 165px;
+    height: 165px;
+  }
+
+  .code-card {
+    max-width: 190px;
+    border-radius: 10px;
+  }
+
+  .code-topbar {
+    min-height: 27px;
+    padding-inline: 7px;
+    font-size: 8px;
+  }
+
+  .code-content {
+    padding: 7px 6px;
+    font-size: 7px;
+    line-height: 1.55;
+  }
+
+  .code-bottom {
+    padding: 6px 7px;
+    font-size: 8px;
+  }
+
   .floating-note {
-    padding: 8px 9px;
-    font-size: 9px;
+    display: none;
   }
 
   .choice-grid {
@@ -1173,6 +1300,8 @@ html[data-theme="dark"] .form-status.error {
   }
 }
 
+/* Accessibility */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1181,14 +1310,8 @@ html[data-theme="dark"] .form-status.error {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* About section without the side card */
-.about-layout {
-  grid-template-columns: minmax(0, 1fr);
-  max-width: 800px;
-  margin-inline: auto;
-}
-
-.about-content > p {
-  max-width: 760px;
+@media (max-width: 680px) {
+  .hero-visual {
+    display: none;
+  }
 }
